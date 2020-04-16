@@ -33,6 +33,9 @@
     "keywords": [
         "lwc"
     ],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties"
+    ],
     "license": "CC0-1.0",
     "lint-staged": {
         "**/*.{css,html,js,json,yaml,yml,md}": [
@@ -42,9 +45,6 @@
             "eslint"
         ]
     },
-    "plugins": {
-"@babel/plugin-proposal-class-properties"
-        },
     "repository": "trailheadapps/lwc-recipes-oss",
     "scripts": {
         "build": "lwc-services build --mode production",
